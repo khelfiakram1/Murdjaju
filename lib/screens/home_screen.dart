@@ -60,12 +60,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       "2c44c278-0038-4e05-a26b-3d17c6562f22",
       iOSSettings: {
         OSiOSSettings.autoPrompt: false,
-        OSiOSSettings.inAppLaunchUrl: false
+        OSiOSSettings.inAppLaunchUrl: false,
       },
     );
 
-    await OneSignal.shared
-        .promptUserForPushNotificationPermission(fallbackToSettings: true);
+    //await OneSignal.shared
+    //  .promptUserForPushNotificationPermission(fallbackToSettings: true);
 // var promptStatus = await OneSignal.shared.getPermissionSubscriptionState();
 //     if (!promptStatus.permissionStatus.hasPrompted) {
 //       OneSignal.shared.addTrigger("prompt_ios", "true");
